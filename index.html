@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <section>
+        <h1>Insira um Produto </h1>
+        <form id="formProduto">
+            <div class="form-group">
+                <label for="produto">Produto</label>
+                <input class="form-control col-6" type="text" name="produto" id="produto">
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor</label>
+                <input class="form-control col-6" type="number" name="valor" id="valor">
+            </div>
+            <button class="btn btn-info" type="submit" id="buttonSubmit">Cadastrar</button>
+        </form>
+    </section>
+    <section>
+            <h1>Produtos Cadatrados </h1>
+            <button class="btn btn-danger"  onclick="handleDeleteAll()"> Deletar todos os produtos</button>
+           
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                            <th>Produto</th>
+                            <th>Valor</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table> 
+        </section>
+        <script src="index.js"></script>
+</body>
+
+</html>
